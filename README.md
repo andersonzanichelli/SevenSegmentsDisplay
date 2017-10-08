@@ -2,6 +2,7 @@
 
 Running
 
+<pre>
 python sevensegments.py
 
 The 7 segments display.
@@ -14,6 +15,10 @@ Enter the numbers that you want display (comma separated: 1,2,3): 0,1,2,3,4,5,6,
            ---  ---  ---  ---  ---       ---  --- 
 |   |    ||        |    |    ||   |    ||   |    |
  ---       ---  ---       ---  ---       ---  --- 
+</pre>
 
 To run all the tests use this command in the directory
+
+<pre>
 python -m unittest discover -s . -p 'test*.py'
+</pre>

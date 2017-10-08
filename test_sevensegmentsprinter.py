@@ -10,11 +10,6 @@ class TestSevenSegmentsPrinter(unittest.TestCase):
     def setUp(self):
         self.ssdOff = SevenSegmentsDisplay(1, [(' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' '), (' ', ' ', ' ')])
         self.held, sys.stdout = sys.stdout, StringIO()
-    
-    def test_output(self):
-        printer = SevenSegmentsPrinter(self.ssdOff)
-        printer.test()
-        self.assertEquals(sys.stdout.getvalue(),'hello world!\n')
 
     def test_print_0(self):
         ssd_0 = SevenSegmentsDisplay(1, [(' ', '-', ' '), ('|', ' ', '|'), (' ', ' ', ' '), ('|', ' ', '|'), (' ', '-', ' ')])
@@ -51,7 +46,6 @@ class TestSevenSegmentsPrinter(unittest.TestCase):
             '       - \n' +
             '| |  ||  \n' +
             ' -     - \n')
-
 
 if __name__ == '__main__':
     unittest.main()

@@ -4,6 +4,9 @@ class SevenSegmentsDisplay:
         self.size = size
         self.segments = segments
 
+    def displaySize(self):
+        return int(self.size)
+
     def topLeft(self):
         return self.segments[0][0][0]
 
